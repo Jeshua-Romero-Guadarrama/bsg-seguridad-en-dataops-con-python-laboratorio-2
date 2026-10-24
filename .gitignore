@@ -1,0 +1,10 @@
+.venv/
+.secrets/
+datos/
+referencia.sha256
+__pycache__/
+*.pyc
+.pytest_cache/
+# Solo se versiona la salida valida de salidas/lab1 (tokens y totales).
+salidas/*
+!salidas/lab1/

@@ -1,0 +1,25 @@
+name: Pruebas automatizadas
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pruebas:
+    name: Pruebas en ${{ matrix.sistema }}
+    runs-on: ${{ matrix.sistema }}
+    strategy:
+      fail-fast: false
+      matrix:
+        sistema: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Obtener el repositorio
+        uses: actions/checkout@v4
+      - name: Instalar Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Instalar dependencias
+        run: python -m pip install -r requirements.txt
+      - name: Ejecutar las pruebas
+        run: python -m pytest -q

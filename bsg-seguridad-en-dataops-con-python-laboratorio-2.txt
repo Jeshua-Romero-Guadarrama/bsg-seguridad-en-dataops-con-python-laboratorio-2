@@ -1,0 +1,24 @@
+Estructura del repositorio bsg-seguridad-en-dataops-con-python-laboratorio-2
+URL del repositorio: https://github.com/Jeshua-Romero-Guadarrama/bsg-seguridad-en-dataops-con-python-laboratorio-2
+Rutas relativas a la raíz del repositorio, una por línea.
+
+.github/workflows/pruebas.yml
+.gitignore
+bsg-seguridad-en-dataops-con-python-laboratorio-2.txt
+comprobar_1a.py
+evidencias.md
+lab1.md
+lab1.py
+preparar.md
+preparar.py
+pruebas/__init__.py
+pruebas/conftest.py
+pruebas/prueba_control_acceso.py
+pruebas/prueba_interfaz.py
+pruebas/prueba_pipeline.py
+pruebas/prueba_preparar.py
+pytest.ini
+README.md
+requirements.txt
+salidas/lab1/detalle_protegido.csv
+salidas/lab1/resumen.csv
